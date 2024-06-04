@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn Mini-project </title>
+    <!-- link css -->
+    <link rel="shortcut icon" href="../Homepage/Images/logo.png" />
+    <link rel="stylesheet" href="../Homepage/homepage-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../login/login.css">
+    <link rel="stylesheet" href="../footer-responsive-done/footer.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="d-lg-flex d-md-none d-sm-none d-flex justify-content-between align-items-center navbar-expand-lg">
+            <div class="nav-part d-flex justify-content-center align-items-center">
+               <a class="navbar-brand" href="../index.html">
+                    <img src="../Homepage/Images/logo.png" width="60px">
+                </a>
+                <h1>MySeksaa</h1>
+                <form class="form-inline my-2 my-lg-0 d-flex w-50 m-4">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Want to learn?" aria-label="Search">
+                    <button class="btn" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="nav-contaner d-flex justify-content-center align-items-center d-sm-none d-lg-block d-xl-block">
+                <div class="manu d-flex justify-content-center align-items-center">
+                    <a href="../index.html" id="home">HOME</a>
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    GATEGORY
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                    <li>
+                                        <a class="dropdown-item" href="../webdesign/getegory.html">Web-design</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../UXUI/UXUI.html">User Experience (UX) Design
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../search-engine/search-engine.html">Search
+                                            Engine Optimization (SEO)</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../search-engine/search-engine.html">Search
+                                            Content Marketing</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item"
+                                            href="../digital-marketing/digital-marketing.html">Digital Marketing</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../websecurity/websecurity.html">Web Security</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../data-analytics/data-analytic.html">Web
+                                            Analytics</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="../aboutus/aboutus.html">ABOUT</a>
+                    <a href="../ContactUs/index.html">CONTACTUS</a>
+                    <a href="../login/login.html">LOGIN</a>
+                    <a href="../SignUp/signup.html" id="sign-up">SIGNUP</a>
+                </div>
+            </div>
+            <div class="navbar-man-icon d-sm-block d-lg-none">
+                <i class="fa-solid fa-bars fs-1"></i>
+            </div>
+            </div>
+        </nav>
+        <nav class="navbar bg-body-tertiary fixed-top" id="nav-respond">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="../index.html">
+                    <img src="../Homepage/Images/logo.png" width="60px">
+                </a>
+                <h1>MySeksaa</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MySeksaa</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    GATEGORY
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="../webdesign/getegory.html">Web-design</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../UXUI/UXUI.html">User Experience (UX) Design
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../search-engine/search-engine.html">Search
+                                            Engine Optimization (SEO)</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../search-engine/search-engine.html">Search
+                                            Content Marketing</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item"
+                                            href="../digital-marketing/digital-marketing.html">Digital Marketing</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../websecurity/websecurity.html">Web Security</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../data-analytics/data-analytic.html">Web
+                                            Analytics</a>
+                                    </li>
+    
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="../webdesign/getegory.html">Gategory</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../aboutus/aboutus.html">ABOUT US</a>
+                            </li>
+                            <li>
+                                <a class="nav-link active" aria-current="page" href="../ContactUs/index.html">CONTACT US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../login/login.html">LOG IN</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../SignUp/signup.html">SIGN UP</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Want to learn?" aria-label="Search">
+                            <button class="btn btn-outline-secondary" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="wrapper">
+            <form class="form-signin d-grid gap-2">
+                <h2>Login to your MySeksaa account </h2>
+                <div class="icon-image">
+                    <img src="./image/Google.png" alt=""> Continue with Apple
+                </div>
+                <div class="icon-image">
+                    <img src="./image/Facebook.png" alt=""> Continue with Apple
+                </div>
+                <div class="icon-image">
+                    <img src="./image/Apple.png" alt=""> Continue with Apple
+                </div>
+    
+                <input type="text" class="form-control" placeholder="Email Address" />
+                <input type="password" class="form-control" placeholder="Password" /> <br>
+                <button class="btn" type="submit">Log In</button>
+    
+                <div class="account">
+                    <label class="acc-1">or <a href="" class="m-1 text-decoration-none">Forget Password</a></label><br>
+                    <label class="acc-2">Don't have an account? <a href="../SignUp/signup.html" class="m-1 text-decoration-none">Sign Up</a></label>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="contain">
+            <div class="header1">
+                <h2>powered by:</h2>
+                <h2>trusted by:</h2>
+            </div>
+        </div>
+    
+        <div class="sponsor">
+            <div class="part-sponsor">
+                <img src="/footer-responsive-done/icon/apama.png" alt="">
+                <img src="/footer-responsive-done/icon/Wingbook.png" alt="">
+                <img src="/footer-responsive-done/icon/Nobleread.png" alt="">
+                <img src="/footer-responsive-done/icon/Poipet.png" alt="">
+                <img src="/footer-responsive-done/icon/vasa.png" alt="">
+            </div>
+            <div class="part-sponsor">
+                <img src="/footer-responsive-done/icon/MoEYS.png" alt="">
+                <img src="/footer-responsive-done/icon/M_Working.png" alt="">
+                <img src="/footer-responsive-done/icon/app_store_logo.png" alt="">
+            </div>
+        </div>
+        <hr width="100%">
+    
+        <div class="container">
+            <div class="item form d-sm-block justify-content-center align-items-center gap-5">
+                <div class="d-flex justify-content-start align-items-center gap-3">
+                    <img src="../Homepage/Images/logo.png" alt="logo-fu" width="50px">
+                    <h2>MySeksaa</h2>
+                </div>
+                <div>
+                    <p>Top learning experience that create more talant in the world</p>
+                    <input class="p-2 rounded-3" type="text" placeholder="example@gmail.com"><br>
+                    <button type="submit">submit</button>
+                </div>
+            </div>
+            <div class="item">
+                <h2 class="two">Course</h2>
+                <ul>
+                    <li><a href="../webdesign/getegory.html">Web Design</a></li>
+                    <li><a href=".../devops/devops.html">DevOps</a></li>
+                    <li><a href="../UXUI/UXUI.html">UX/UI Design</a></li>
+                    <li><a href="../search-engine/search-engine.html">SEO</a></li>
+                    <li><a href="../Content Marketing/Content-Marketing.html">Content Marketing</a></li>
+                    <li><a href="../digital-marketing/digital-marketing.html">Digital Marketing</a></li>
+                    <li><a href="../websecurity/websecurity.html">Web Security</a></li>
+                    <li><a href="../data-analytics/data-analytic.html">Web Analytice</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <h2>Contact US</h2>
+                <ul>
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li class="cls"><a href="#">Press</a> <a href="#" class="new">New</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Telegram</a></li>
+                    <li><a href="#">Call</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <h2>Social</h2>
+                <ul>
+                    <li><a href="#">Linked</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">Google</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="item">
+                <h2>Branch</h2>
+                <ul>
+                    <li><a href="#">Cambodia</a></li>
+                    <li><a href="#">Thailand</a></li>
+                    <li><a href="#">Loas</a></li>
+                    <li><a href="#">USA</a></li>
+                    <li><a href="#">Korea</a></li>
+                    <li><a href="#">China</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="foot-under">
+            <div class="footer-left">
+                <img src="/footer-responsive-done/icon/circled-1-c.png" alt="">
+                <p>2023 MySeksaa Inc. All rights servered</p>
+            </div>
+            <div class="footer-right">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-solid fa-globe"></i>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/dfbc5788ab.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>

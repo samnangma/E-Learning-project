@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySeksaa</title>
+    <link rel="stylesheet" href="./Homepage/homepage-style.css">
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- Link google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- link animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Page - icon -->
+    <!-- <link rel="shortcut icon" href="./Homepage/Images" />  -->
+    <!-- Footer style -->
+    <link rel="stylesheet" href="./footer-responsive-done/footer.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav class="d-lg-flex d-md-none d-sm-none d-flex justify-content-between align-items-center navbar-expand-lg">
+            <div class="nav-part d-flex justify-content-center align-items-center">
+               <a class="navbar-brand" href="./index.html">
+                    <img src="./Homepage/Images/logo.png" alt="Avatar Logo" style="width:70px;" class="rounded-pill">
+                </a>
+                <h1>MySeksaa</h1>
+                <form class="form-inline my-2 my-lg-0 d-flex w-50 m-4">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Want to learn?" aria-label="Search">
+                    <button class="btn" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="nav-contaner d-flex justify-content-center align-items-center d-sm-none d-lg-block d-xl-block">
+                <div class="manu d-flex justify-content-center align-items-center">
+                    <a href="./index.html" id="home">HOME</a>
+                    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    GATEGORY
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                    <li>
+                                        <a class="dropdown-item" href="./webdesign/getegory.html">Web-design</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="./UXUI/UXUI.html">User Experience (UX) Design
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="./search-engine/search-engine.html">Search
+                                            Engine Optimization (SEO)</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="./search-engine/search-engine.html">Search
+                                            Content Marketing</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item"
+                                            href="./digital-marketing/digital-marketing.html">Digital Marketing</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="./websecurity/websecurity.html">Web Security</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="./data-analytics/data-analytic.html">Web
+                                            Analytics</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="./aboutus/aboutus.html">ABOUT</a>
+                    <a href="./ContactUs/index.html">CONTACTUS</a>
+                    <a href="./login/login.html">LOGIN</a>
+                    <a href="./SignUp/signup.html" id="sign-up">SIGNUP</a>
+                </div>
+            </div>
+            <div class="navbar-man-icon d-sm-block d-lg-none">
+                <i class="fa-solid fa-bars fs-1"></i>
+            </div>
+            </div>
+        </nav>
+        <nav class="navbar bg-body-tertiary fixed-top" id="nav-respond">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="../index.html">
+                    <img src="../Homepage/Images/logo.png" width="60px">
+                </a>
+                <h1>MySeksaa</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MySeksaa</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="">HOME</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    GATEGORY
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="./webdesign/getegory.html">Web-design</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="./UXUI/UXUI.html">User Experience (UX) Design
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="./search-engine/search-engine.html">Search
+                                            Engine Optimization (SEO)</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="./search-engine/search-engine.html">Search
+                                            Content Marketing</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item"
+                                            href="./digital-marketing/digital-marketing.html">Digital Marketing</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="./websecurity/websecurity.html">Web Security</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="./data-analytics/data-analytic.html">Web
+                                            Analytics</a>
+                                    </li>
+    
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="../webdesign/getegory.html">Gategory</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/aboutus/aboutus.html">ABOUT US</a>
+                            </li>
+                            <li>
+                                <a class="nav-link active" aria-current="page" href="/ContactUs/index.html">CONTACT US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/login/login.html">LOG IN</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/SignUp/signup.html">SIGN UP</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Want to learn?" aria-label="Search">
+                            <button class="btn btn-outline-secondary" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+<div class="container">
+    <main data-aos="slide-right" data-aos-anchor=".other-element">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center align-items-center">
+                <div class="page1-part1 w-100 d-grid gap-3">
+                    <h1 style="font-size: 45px; font-weight: 700;">
+                        Up your
+                        <span class="color">skill</span>
+                        to
+                        <span class="color">advance</span>
+                            your
+                            <span class="color">career</span>
+                            part
+                    </h1>
+                    <p>Provides you with latest online learning system and materail
+                        that help your knowledge growing</p>
+                    <div class="bottons-page1">
+                        <button class="w-50" onclick="window.location = '../SignUp/signup.html'">Get Start</button>
+                        <button class="w-50" onclick="window.location = '../login/login.html'">Log-in</button>
+                    </div>
+                </div>
+            </div>
+            <div class="offset-lg-2 col-lg-6 col-md-6">
+                <div class="page1-part1 w-100">
+                    <img class="w-100" src="./Homepage/Images/homepage-image.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <section class="page2">
+                <h1 class="text-center">Learn with new enviroment</h1>
+                <p class="text-center">More courses for you to learn with professional professor and build up to a team
+                    leader.
+                </p>
+                <div class="cards d-lg-flex d-sm-block d-block">
+                    <div class="card col-lg-4 col-sm-12 col-12 mb-3">
+                        <div class="header d-flex align-items-center">
+                            <div class="logo" style="width: 15%;">
+                                <img src="./Homepage/Images/figmalogo.png" width="100%">
+                            </div>
+                            <h3 class="w-auto">UX UI Design</h3>
+                        </div>
+                        <p class="text-light">Lesson on design that cover the
+                            most recent developments</p>
+                        <a href="https://www.figma.com/ui-design-tool/" target="_blank" class="text-light active">Learn
+                            more ></a>
+                    </div>
+                    <div class="card col-lg-4 col-sm-12 col-12 mb-3">
+                        <div class="header d-flex align-items-center">
+                            <div class="logo" style="width: 15%;">
+                                <svg width="60" height="60" viewbox="0 0 38 37" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M36.1063 18.5C36.1063 28.1854 28.4274 36 18.9999 36C9.57251 36 1.89355 28.1854 1.89355 18.5C1.89355 8.81463 9.57251 1 18.9999 1C28.4274 1 36.1063 8.81463 36.1063 18.5Z"
+                                        stroke="#0000ff
+" stroke-width="2" />
+                                    <path
+                                        d="M29.0211 18.5C29.0211 23.4598 27.8213 27.9015 25.9339 31.0697C24.034 34.2589 21.5504 36 18.9998 36C16.4491 36 13.9656 34.2589 12.0657 31.0697C10.1783 27.9015 8.97852 23.4598 8.97852 18.5C8.97852 13.5402 10.1783 9.0985 12.0657 5.93033C13.9656 2.74113 16.4491 1 18.9998 1C21.5504 1 24.034 2.74113 25.9339 5.93033C27.8213 9.0985 29.0211 13.5402 29.0211 18.5Z"
+                                        stroke="#0000ff
+" stroke-width="2" />
+                                    <path d="M5.61719 7.08521C9.29095 10.3653 19.7087 14.9575 31.9895 7.08521"
+                                        stroke="#0000ff
+" stroke-width="2" />
+                                    <path d="M31.9893 30.3254C28.3155 27.0453 17.8978 22.4531 5.61692 30.3254"
+                                        stroke="#0000ff
+" stroke-width="2" />
+                                    <path d="M1.68066 18.1063H36.319" stroke="#0000ff
+" stroke-width="2" />
+                                    <path d="M19 35.4255L19 0.787238" stroke="#0000ff
+" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <h3 class="w-auto">Web-developement</h3>
+                        </div>
+                        <p>Class in development refer to advance skill of web-development to build you as a
+                            web-developer.</p>
+                        <a href="https://brainstation.io/career-guides/what-is-web-development#:~:text=Web%20development%2C%20also%20known%20as,web%20programming%2C%20and%20database%20management."
+                            target="_blank">Learn more ></a>
+                    </div>
+                    <div class="card col-lg-4 col-sm-12 col-12 mb-3">
+                        <div class="header d-flex align-items-center">
+                            <div class="logo" style="width: 15%;">
+                                <svg width="50" height="50" viewbox="0 0 29 39" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="11.8853" width="29" height="26.1475" rx="5" fill="#0000ff
+" />
+                                    <path
+                                        d="M21.7705 11.8852C21.7705 17.8358 18.0813 21.7705 14.5 21.7705C10.9187 21.7705 7.22949 17.8358 7.22949 11.8852C7.22949 5.93471 10.9187 2 14.5 2C18.0813 2 21.7705 5.93471 21.7705 11.8852Z"
+                                        stroke="#0000ff
+" stroke-width="4" />
+                                </svg>
+
+                            </div>
+                            <h3 class="w-auto">Security</h3>
+                        </div>
+                        <p>Security course, you will learn how to protect our data or our thing from other hacker.</p>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/Security" target="_blank">Learn more ></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <section class="page3">
+                <h2 class="fs-1">The most popular classes</h2>
+                <p>These classes has more than 20 students for each class</p>
+
+                <div class="cards d-lg-flex d-sm-block d-block">
+                    <a href="./UXUI/UXUI.html">
+                        <div class="card col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                            <img src="./Homepage/Images/learning-figma.png" alt="">
+                            <span style="color: #0000ff
+;">Design</span>
+                            <h3 class="text-dark">Figma UI UX Design..</h3>
+                                <p style="width: 100%;">Use Figma to a job in UI Design, User interface, User Experience
+                                    design.</p>
+                                <div class="stars text-dark d-flex gap-3">
+                                    <span style="font-weight: 500; color: #0000ff
+;">4.3</span>
+                                    <div class="stars-5 text-warning">
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                        <i class="fa-sharp fa-solid fa-star"></i>
+                                    </div>
+                                    <span style="font-weight: 400; color: #B0B0B0;">(155)</span>
+                                </div>
+                                <div
+                                    class="professor-profile w-100 d-flex justify-content-between align-content-center">
+                                    <div class="part1 d-flex align-items-center gap-3">
+                                        <img class="w-25 h-auto rounded-circle" src="./Homepage/Images/Seangleng_professor.jpg"
+                                            alt="">
+                                        <div class="professor-name">
+                                            <h3>Nara</h3>
+                                            <p>2023 Enrolled</p>
+                                        </div>
+                                    </div>
+                                    <div class="part2">
+                                        <h2>$69.99</h2>
+                                    </div>
+                                </div>
+                        </div>
+                    </a>
+                    <a href="./webdesign/getegory.html">
+                        <div class="card col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                            <img src="./Homepage/Images/web-developer.jpg" alt="">
+                            <span style="color: #0000ff
+;">Website - Frontend</span>
+                            <h4 class="text-dark">HTML, CSS, bootstrap, javas...
+                            </h4>
+                            <p style="width: 100%;">Design website with coding languages with us and teams.</p>
+                            <div class="stars text-dark d-flex gap-3">
+                                <span style="font-weight: 500; color: #0000ff
+;">4.3</span>
+                                <div class="stars-5 text-warning">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                </div>
+                                <span style="font-weight: 400; color: #B0B0B0;">(155)</span>
+                            </div>
+                            <div class="professor-profile w-100 d-flex justify-content-between align-content-center">
+                                <div class="part1 d-flex align-items-center gap-3">
+                                    <img class="w-25 h-auto rounded-circle" src="./Homepage/Images/Bunthong-professor.jpg"
+                                        alt="">
+                                    <div class="professor-name">
+                                        <h3>Dara</h3>
+                                        <p>2020 Enrolled</p>
+                                    </div>
+                                </div>
+                                <div class="part2">
+                                    <h2>$70.99</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../devops/devops.html">
+                        <div class="card col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                            <img src="./Homepage/Images/Spring.png" alt="">
+                            <span style="color: #0000ff
+;">Design - Backend</span>
+                            <h4 class="text-dark">Spring Boot framwork</h4>
+                            <p style="width: 100%;">you can develop projects within a short time. It's open-source and
+                                customizable.</p>
+                            <div class="stars text-dark d-flex gap-3">
+                                <span style="font-weight: 500; color: #0000ff
+;">4.3</span>
+                                <div class="stars-5 text-warning">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                </div>
+                                <span style="font-weight: 400; color: #B0B0B0;">(155)</span>
+                            </div>
+                            <div class="professor-profile w-100 d-flex justify-content-between align-content-center">
+                                <div class="part1 d-flex align-items-center gap-3">
+                                    <img class="w-25 h-auto rounded-circle" src="./Homepage/Images/Samnang.jpeg"
+                                        alt="">
+                                    <div class="professor-name">
+                                        <h3>Samnang</h3>
+                                        <p>2021 Enrolled</p>
+                                    </div>
+                                </div>
+                                <div class="part2">
+                                    <h2>$105.89</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="button-center">
+                    <button onclick="window.location = './webdesign/getegory.html'">
+                        View all program
+                    </button>
+                </div>
+            </section>
+        </div>
+        <div class="row mt-5 gap-3 justify-content-around justify-content-sm-center">
+            <div class="header mt-5 d-flex flex-column justify-content-center align-items-center">
+                <h2 style="color: #0000ff
+;">Tutors</h2>
+                <p class="w-50 text-center text-dark-emphasis">"Meet our teachers who will provide you with quality
+                    education. Our instructors have the knowledge and ability to instruct thousands of students."</p>
+            </div>
+            <!-- <div
+                class="card border-2 col-12 col-lg-3 col-sm-12 col-md-4 pb-0 bg-light rounded-4 shadow-lg bg-body rounded">
+                <img src="./Homepage/Images/chanThat-professor.jpg" class="card-img-top m-auto rounded-circle w-25" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center" style="color: black;">Thet ChanThat</h5>
+                    <p class="card-text text-center w-100 mb-4" style="color: #0000ff
+">Devops, Backend developer</p>
+                    <p class="cards-text text-center w-100 text-dark">
+                        If You Think Math is Hard Try Web Design.</p>
+                    <div class="card-icon mt-5">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-telegram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div> -->
+            <div
+                class="card border-2 col-12 col-lg-3 col-sm-12 col-md-4 pb-0 bg-light rounded-4 shadow-lg bg-body rounded">
+                <img src="./Homepage/Images/Bunthong-professor.jpg" class="card-img-top m-auto rounded-circle w-25" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center" style="color: black;">Dara</h5>
+                    <p class="card-text text-center w-100 mb-4" style="color: #0000ff
+">Cyber - Security, Frontend</p>
+                    <p class="cards-text text-center w-100 text-dark">
+                        Practice the philosophy of continuous improvement. Get a little bit better every single day.</p>
+                    <div class="card-icon mt-5">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-telegram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="card border-2 col-12 col-lg-3 col-sm-12 col-md-4 pb-0 bg-light rounded-4 shadow-lg bg-body rounded">
+                <img src="./Homepage/Images/Seangleng_professor.jpg" class="card-img-top m-auto rounded-circle w-25" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center" style="color: black;">Nara</h5>
+                    <p class="card-text text-center w-100 mb-4" style="color: #0000ff
+">Frontend, UX UI design</p>
+                    <p class="cards-text text-center w-100 text-dark">
+                        There are three responses to a piece of design - yes, no, and WOW! Wow is the one to aim for.
+                    </p>
+                    <div class="card-icon mt-5">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-telegram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="card border-2 col-12 col-lg-3 col-sm-12 col-md-4 pb-0 bg-light rounded-4 shadow-lg bg-body rounded">
+                <img src="./Homepage/Images/Samnang.jpeg" class="card-img-top m-auto rounded-circle w-25"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center" style="color: black;">Samnang</h5>
+                    <p class="card-text text-center w-100 mb-4" style="color: #0000ff
+">Marketing</p>
+                    <p class="cards-text text-center w-100 text-dark">
+                        Advertising in the final analysis should be news. If it is not news it is worthless.</p>
+                    <div class="card-icon mt-5">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-telegram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row p-3 mt-5 mb-5 d-block d-lg-flex d-sm-block flex-wrap justify-content-between "></div>
+
+        <div class="row">
+            <div class="header">
+                <h2>Our recent courses</h2>
+            </div>
+            <div class="list1 d-lg-flex gap-4 d-sm-block mt-5">
+                <img id="scholarship" src="./Homepage/Images/Fullstack -developer.jpg" alt="">
+                <div class="container-course">
+                    <h2 class="fw-bold">SCHOLARSHIP - FULLSTACK DEVELOPMENT</h2>
+                    <p class="text-dark-emphasis">In the long run, students can study for free and get a clear career in each major and become a
+                        Full Stack Web Developer at a basic level.
+                    </p>
+                    <a href="./webdesign/getegory.html">More detail</a>
+                </div>
+            </div>
+            <div class="list1 d-lg-flex gap-4 d-sm-block mt-5 justify-content-end align-items-center">
+                <div class="container-course text-end">
+                    <h2 class="fw-bold">DATA ANALYTICS</h2>
+                    <p class="text-dark-emphasis">Admission March 25, 2023 for Saturday-Sunday 08:00 AM - 12:00 PM Register now and you will
+                        receive a 20% scholarship immediately.
+                    </p>
+                    <a href="./data-analytics/data-analytic.html">More detail</a>
+                </div>
+                <img id="scholarship" src="./Homepage/Images/Analytics and Reporting.webp" alt="">
+            </div>
+            <div class="list1 d-lg-flex gap-4 d-sm-block mt-5 justify-content-start align-items-center">
+                <img id="scholarship" src="./Homepage/Images/java_short_course.jpg" alt="">
+                <div class="container-course text-start">
+                    <h3 style="color: #0000ff
+;">[ new update ]</h3>
+                    <h2 class="fw-bold">Java Programming Short Course!</h2>
+                    <p class="text-dark-emphasis">Study time:
+                        Monday-Friday 6:00 PM - 8:00 PM Enrollment March 27, 2023
+                        Saturday-Sunday 8:00 AM - 12:00 PM Enrollment on April 1, 2023
+                    </p>
+                    <a href="./webdesign/getegory.html">More detail</a>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+</div>
+<footer>
+    <div class="contain">
+        <div class="header1">
+            <h2>powered by:</h2>
+            <h2>trusted by:</h2>
+        </div>
+    </div>
+
+    <div class="sponsor">
+        <div class="part-sponsor">
+            <img src="./footer-responsive-done/icon/apama.png" alt="">
+            <img src="./footer-responsive-done/icon/Wingbook.png" alt="">
+            <img src="./footer-responsive-done/icon/Nobleread.png" alt="">
+            <img src="./footer-responsive-done/icon/Poipet.png" alt="">
+            <img src="./footer-responsive-done/icon/vasa.png" alt="">
+        </div>
+        <div class="part-sponsor">
+            <img src="./footer-responsive-done/icon/MoEYS.png" alt="">
+            <img src="./footer-responsive-done/icon/M_Working.png" alt="">
+            <img src="./footer-responsive-done/icon/app_store_logo.png" alt="">
+        </div>
+    </div>
+    <hr width="100%">
+
+    <div class="container">
+        <div class="item form d-sm-block justify-content-center align-items-center gap-5">
+            <div class="d-flex justify-content-start align-items-center gap-3">
+                <img src="./Homepage/Images/logo.png" alt="logo-fu" width="50px">
+                <h2>MySeksaa</h2>
+            </div>
+            <div>
+                <p>Top learning experience that create more talant in the world</p>
+                <input class="p-2 rounded-3" type="text" placeholder="example@gmail.com"><br>
+                <button type="submit">submit</button>
+            </div>
+        </div>
+        <div class="item">
+            <h2 class="two">Course</h2>
+            <ul>
+                <li><a href="./webdesign/getegory.html">Web Design</a></li>
+                <li><a href="../devops/devops.html">DevOps</a></li>
+                <li><a href="./UXUI/UXUI.html">UX/UI Design</a></li>
+                <li><a href="./search-engine/search-engine.html">SEO</a></li>
+                <li><a href="./Content Marketing/Content-Marketing.html">Content Marketing</a></li>
+                <li><a href="./digital-marketing/digital-marketing.html">Digital Marketing</a></li>
+                <li><a href="./websecurity/websecurity.html">Web Security</a></li>
+                <li><a href="./data-anaytics/data-analytic.html">Web Analytice</a></li>
+            </ul>
+        </div>
+        <div class="item">
+            <h2>Contact US</h2>
+            <ul>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li class="cls"><a href="#">Press</a> <a href="#" class="new">New</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Telegram</a></li>
+                <li><a href="#">Call</a></li>
+            </ul>
+        </div>
+        <div class="item">
+            <h2>Social</h2>
+            <ul>
+                <li><a href="#">Linked</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">Google</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+        <div class="item">
+            <h2>Branch</h2>
+            <ul>
+                <li><a href="#">Cambodia</a></li>
+                <li><a href="#">Thailand</a></li>
+                <li><a href="#">Loas</a></li>
+                <li><a href="#">USA</a></li>
+                <li><a href="#">Korea</a></li>
+                <li><a href="#">China</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="foot-under">
+        <div class="footer-left">
+            <img src="/footer-responsive-done/icon/circled-1-c.png" alt="">
+            <p>2023 MySeksaa Inc. All rights servered</p>
+        </div>
+        <div class="footer-right">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-solid fa-globe"></i>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="https://kit.fontawesome.com/dfbc5788ab.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
